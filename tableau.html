@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Tableaux fusionnés stylés</title>
+<link rel="stylesheet" href="tableau.css">
+
+  <style>
+    body {
+      font-family: 'Georgia', serif;
+      background-color: #fdf0e8;
+      margin: 40px 20px;
+      color: #3a3a3a;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 90%;
+      margin: 30px auto;
+      background-color: #fffaf0;
+      border: 5px double #333;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    th, td {
+      border: 3px double #666;
+      padding: 15px 20px;
+      text-align: center;
+      font-style: italic;
+      color: #555;
+      vertical-align: middle;
+      transition: background-color 0.3s ease;
+    }
+
+    th {
+      background-color: #f5e6d9;
+      color: #222;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 1.1em;
+    }
+
+    td[colspan] {
+      font-weight: 500;
+      font-style: italic;
+      color: #666;
+    }
+
+    caption {
+      font-family: 'Arial Black', Arial, sans-serif;
+      font-weight: 900;
+      font-size: 1.7em;
+      color:#4d379c; 
+      text-transform: uppercase;
+      margin-bottom: 20px;
+      text-decoration: underline;
+      letter-spacing: 2px;
+    }
+
+    /* Ligne finale note du tableau 1 */
+    table:nth-of-type(1) tr:last-child td {
+      font-style: italic;
+      color: #999;
+      font-size: 0.95em;
+      text-align: center;
+      border: none;
+      padding-top: 10px;
+    }
+
+    /* Tableau imbriqué pour E et F */
+    table.nested-table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: transparent;
+      border: none;
+      box-shadow: none;
+    }
+
+    table.nested-table td {
+      border: 2px double #666;
+      padding: 12px;
+      font-style: italic;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Partie 1 : Tableau 1 -->
+  <table>
+    <caption>Tableau 1 : Liste IG/1-B</caption>
+    <tr>
+      <th>Nom</th>
+      <th>Prénom</th>
+      <th>Âge</th>
+      <th>Pays</th>
+    </tr>
+    <tr>
+      <td>LEOTOICHAN</td>
+      <td>O. Rayan</td>
+      <td>18 ans</td>
+      <td>Bénin</td>
+    </tr>
+    <!-- <tr>
+      <td>OROU SIME</td>
+      <td>G. K. Dayane</td>
+      <td>17 ans</td>
+      <td>Bénin</td>
+    </tr>
+    <tr>
+      <td>HOUKANRIN</td>
+      <td>Y. A. Amen</td>
+      <td>17 ans</td>
+      <td>Bénin</td>
+    </tr> -->
+    <tr>
+      <td colspan="4">Ces trois individus sont tous des étudiants</td>
+    </tr>
+  </table>
+
+  <!-- Partie 2 : Tableau 2 -->
+  <table>
+    <caption>Tableau 2</caption>
+    <tr>
+      <td colspan="2">A</td>
+    </tr>
+    <tr>
+      <td>B</td>
+      <td>C</td>
+    </tr>
+  </table>
+
+  <!-- Partie 3 : Tableau 3 -->
+  <table>
+    <caption>Tableau 3</caption>
+    <tr>
+      <td>D</td>
+      <td>
+        <table class="nested-table">
+          <tr><td>E</td></tr>
+          <tr><td>F</td></tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+
+  <!-- Partie 4 : Fusion verticale des tableaux 2 et 3 -->
+  <table>
+    <caption>Tableau 4 : Fusion verticale des tableaux 2 et 3</caption>
+    <!-- Contenu du tableau 2 -->
+    <tr>
+      <td colspan="2">A</td>
+    </tr>
+    <tr>
+      <td>B</td>
+      <td>C</td>
+    </tr>
+
+    <!-- Contenu du tableau 3 -->
+    <tr>
+      <td>D</td>
+      <td>
+        <table class="nested-table">
+          <tr><td>E</td></tr>
+          <tr><td>F</td></tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!-- <!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Site avec iframe compact</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    .container {
+      width: 65%;
+      max-width: 1000px;
+      margin-top: 20px;
+    }
+
+    .entete {
+      height: 25vh;
+      width: 100%;
+      border: none;
+    }
+
+    .main {
+      display: flex;
+      height: 60vh;
+      margin-top: 10px;
+    }
+
+    .menu {
+      width: 20%;
+      border: none;
+    }
+
+    .contenu {
+      width: 80%;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <iframe src="entete.html" class="entete" scrolling="no"></iframe>
+
+    <div class="main">
+      <iframe src="azerty.html" class="menu"></iframe>
+      <iframe src="apropos.html" class="contenu" name="oui"></iframe>
+    </div>
+  </div>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end; /* Colle les liens en bas */
+      align-items: center;
+      background-color: #f0f0f0;
+      font-family: sans-serif;
+    }
+
+    .menu {
+      background-color: #004080;
+      color: white;
+      width: 100%;
+      text-align: center;
+      padding: 10px 0;
+    }
+
+    .menu a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    .menu a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="menu">
+    <a href="apropos.html" target="oui">À propos</a>
+    <a href="contact.html" target="oui">Contact</a>
+    <a href="services.html" target="oui">Services</a>
+  </div>
+</body>
+</html>

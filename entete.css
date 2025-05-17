@@ -1,0 +1,17 @@
+body {  
+    background: url('mine.png')no-repeat center center / cover;
+  }   
+
+ 
+  /* body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .container {
+    width: 75%;
+    max-width: 1200px; /* limite max sur PC très larges */
+  }
+ */

@@ -1,0 +1,37 @@
+/* Bandeau supérieur */
+.top-links {
+  text-align: right;
+  background-color: #f4f4f4;
+  padding: 5px 15px;
+  font-size: 14px;
+  color: #004080;
+}
+.top-links a {
+  color: #004080;
+  text-decoration: none;
+  margin: 0 5px;
+}
+.top-links a:hover {
+  text-decoration: underline;
+}
+
+/* En-tête avec logo et menu */
+.header-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 30px;
+  border-bottom: 2px solid #e5e5e5;
+}
+.logo img {
+  height: 60px;
+}
+.main-menu a {
+  margin-left: 20px;
+  font-weight: bold;
+  color: #000;
+  text-decoration: none;
+}
+.main-menu a:hover {
+  color: #004080;
+}

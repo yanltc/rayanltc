@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulaire</title>
+    <link rel="stylesheet" href="formulaire2.css">
+</head>
+<body>
+    <h2 style="text-align: center;">FORMULAIRE</h2>
+    <form>
+        <fieldset>
+            <legend>ETAT CIVIL</legend>
+            
+            <label for="nom">NOM:</label><br>
+            <input type="text" name="nom" id="nom" placeholder="Dupont"><br>
+
+            <label for="prenom">PRENOM:</label><br>
+            <input type="text" name="prenom" id="prenom" placeholder="Jean"><br>
+
+            <label for="domaine">DOMAINE:</label><br>
+            <input type="text" name="domaine" id="domaine" placeholder="Informatique"><br>
+
+            <label for="mail">Mail:</label><br>
+            <input type="email" name="mail" id="mail" placeholder="exemple@gmail.com"><br>
+
+            <label for="sexe">SEXE:</label><br>
+            <select name="sexe" id="sexe">
+                <option value="masculin">Masculin</option>
+                <option value="feminin">Féminin</option>
+            </select><br>
+
+            <label for="contact">CONTACT:</label><br>
+            <input type="tel" name="contact" id="contact" placeholder="+229 0100000000"><br>
+        </fieldset>
+
+        <p><strong>Diplômes</strong></p>
+        <p>Veuillez sélectionner les diplomes que vous avez obtenus :</p>
+        <input type="checkbox" name="diplome" value="CEP" id="cep"> <label for="cep">CEP</label>
+        <input type="checkbox" name="diplome" value="BEPC" id="bepc"> <label for="bepc">BEPC</label>
+        <input type="checkbox" name="diplome" value="BAC" id="bac"> <label for="bac">BAC</label>
+        <input type="checkbox" name="diplome" value="BTS" id="bts"> <label for="bts">BTS</label>
+        <input type="checkbox" name="diplome" value="CAP" id="cap"> <label for="cep">CAP</label>
+        <input type="checkbox" name="diplome" value="DTI" id="dti"> <label for="dti">DTI</label>
+
+        <p>Votre adresse:</p>
+        <textarea name="adresse" rows="3" cols="30" placeholder="123 rue Exemple, Quartier, Ville"></textarea><br>
+
+       <label for="pays">PAYS :</label><br>
+<select name="pays" id="pays">
+    <!-- Pays africains -->
+    <optgroup label="Afrique">
+        <option value="benin">Bénin</option>
+        <option value="senegal">Sénégal</option>
+        <option value="cotedivoire">Côte d'Ivoire</option>
+        <option value="nigeria">Nigéria</option>
+        <option value="ghana">Ghana</option>
+        <option value="mali">Mali</option>
+        <option value="burkinafaso">Burkina Faso</option>
+        <option value="togo">Togo</option>
+        <option value="niger">Niger</option>
+        <option value="maroc">Maroc</option>
+        <option value="algerie">Algérie</option>
+        <option value="tunisie">Tunisie</option>
+        <option value="afriquedusud">Afrique du Sud</option>
+        <option value="egypte">Égypte</option>
+        <option value="kenya">Kenya</option>
+    </optgroup>
+
+    <!-- Pays européens -->
+    <optgroup label="Europe">
+        <option value="france">France</option>
+        <option value="allemagne">Allemagne</option>
+        <option value="espagne">Espagne</option>
+        <option value="italie">Italie</option>
+        <option value="portugal">Portugal</option>
+        <option value="belgique">Belgique</option>
+        <option value="paysbas">Pays-Bas</option>
+        <option value="royaumeuni">Royaume-Uni</option>
+        <option value="suede">Suède</option>
+        <option value="norvege">Norvège</option>
+        <option value="suisse">Suisse</option>
+        <option value="grece">Grèce</option>
+        <option value="autriche">Autriche</option>
+        <option value="pologne">Pologne</option>
+        <option value="irlande">Irlande</option>
+    </optgroup>
+</select><br>
+
+        <br><br>
+        <input type="submit" value="Envoyer">
+        <input type="reset" value="Réinitialiser">
+        <button type="button" onclick="window.close();">Quitter</button>
+    </form>
+</body>
+</html>

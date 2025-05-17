@@ -1,0 +1,54 @@
+body{ 
+    background :  url(mine.png)
+     } 
+       /* Style général du tableau */
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+    border: 2px solid #007bff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Coins arrondis en haut et en bas */
+table tr:first-child th {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+table tr:last-child th {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+/* Cellules du tableau */
+th {
+    padding: 12px 20px;
+    background-color: transparent;
+
+    transition: background-color 0.3s ease;
+}
+
+/* Effet au survol */
+th:hover {
+    background-color: #cce5ff;
+    cursor: pointer;
+}
+
+/* Supprimer les bordures internes */
+table th {
+    border: none;
+}
+ body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .container {
+    width: 75%;
+    max-width: 1200px; /* limite max sur PC très larges */
+  }
+
